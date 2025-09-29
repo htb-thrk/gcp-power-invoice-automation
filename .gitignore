@@ -1,0 +1,78 @@
+# ========================================
+# Security - !!最重要!! 機密情報
+# ========================================
+.env
+.env.*
+*.keys
+*.pem
+credentials.json
+service-account-key.json
+
+
+# ========================================
+# Windows Specific -
+# ========================================
+desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.url
+*._*
+.Spotlight-V100
+.Trashes
+
+
+# ========================================
+# Visual Studio - IDE設定とビルド成果物
+# ========================================
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+*.csproj.user
+*.sln.docstates
+packages/
+# ビルド出力
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+Build/
+bld/
+
+
+# ========================================
+# Common IDEs 
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.sublime-*
+
+
+# ========================================
+# Dependencies & Build artifacts 
+# ========================================
+node_modules/
+vendor/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+
+# ========================================
+# Logs & Temporary files
+# ========================================
+*.log
+*.tmp
+*.bak
+*.swp
