@@ -4,10 +4,10 @@ import functions_framework
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 
-PROJECT_ID   = os.environ["PROJECT_ID"]
-LOCATION     = os.environ["LOCATION"]              # e.g. "us" or "eu"
-PROCESSOR_ID = os.environ["PROCESSOR_ID"]          # your Document OCR processor id
-OUTPUT_BUCKET= os.environ["OUTPUT_BUCKET"]         # GCS bucket for DocAI JSON
+PROJECT_ID   = os.environ["htbwebsite-chatbot-462005"]
+LOCATION     = os.environ["us"]       
+PROCESSOR_ID = os.environ["7b719203d16ca8d6"]        
+OUTPUT_BUCKET= os.environ["OUTPUT_BUCKET"]
 
 @functions_framework.cloud_event
 def submit_to_docai(event):
@@ -16,7 +16,6 @@ def submit_to_docai(event):
     name   = data["name"]
 
     if not name.lower().endswith(".pdf"):
-        # PDF以外はスキップ
         return
 
     input_gcs_uri = f"gs://{bucket}/{name}"

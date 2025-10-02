@@ -4,7 +4,7 @@ import datetime as dt
 import functions_framework
 from google.cloud import storage, bigquery
 
-PROJECT_ID   = os.environ["PROJECT_ID"]
+PROJECT_ID   = os.environ["htbwebsite-chatbot-462005"]
 DATASET      = os.environ["BQ_DATASET"]
 TABLE        = os.environ["BQ_TABLE"]
 
